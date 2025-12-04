@@ -8,7 +8,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Live Site](https://mateusdmc.github.io/fm-qr-code-component/)
+- Solution URL: [Live Site](https://mateusdmc.github.io/fm-blog-preview-card/)
 
 ## My process
 
