@@ -167,14 +167,14 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
-  }
-  .table {
-    display: table;
-  }
-  .h-\[501px\] {
-    height: 501px;
   }
   .h-screen {
     height: 100vh;
@@ -188,17 +188,11 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -224,10 +218,6 @@
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -246,9 +236,6 @@
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
-  }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
@@ -277,16 +264,12 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
-  .underline {
-    text-decoration-line: underline;
+  .text-\[\#6B6B6B\] {
+    color: #6B6B6B;
   }
   .shadow-\[8px_8px_\#000000\] {
     --tw-shadow: 8px 8px var(--tw-shadow-color, #000000);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .hover\:text-\[\#F4D04E\] {
     &:hover {
@@ -419,11 +402,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -449,7 +427,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
     }
   }
 }
